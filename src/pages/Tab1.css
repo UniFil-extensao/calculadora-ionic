@@ -1,0 +1,25 @@
+ ion-button{
+   --border-radius: 100%;
+   height:100%
+} 
+
+ion-grid{
+    max-height: 100%;
+    height: 100%;
+}
+
+#visor{
+    height: 28.57%;
+}
+
+ion-row{
+    height: 14.285%;
+}
+
+/* #del{
+    --border-radius: 100%
+} */
+
+/* .botoes-redondos{
+    --border-radius: 100%
+} */
