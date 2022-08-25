@@ -10,89 +10,89 @@ const Tab1: React.FC = () => {
           <IonTitle>Tab 1</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
+      <IonContent fullscreen>
       <IonCard id="visor">
         VISOR DA CALCULADORA
       </IonCard>
-      <IonGrid>
+      <IonGrid fixed={true}>
 
         <IonRow>
           <IonCol >
-            <IonButton expand='full' shape='round' color="primary">C</IonButton>
+            <IonButton  color="primary">C</IonButton>
           </IonCol>
           <IonCol>
-          <IonButton expand='full' shape='round' color="primary">(</IonButton>
+          <IonButton  color="primary">(</IonButton>
           </IonCol>
           <IonCol>
-            <IonButton expand='full' shape='round' color="primary">)</IonButton>
+            <IonButton  color="primary">)</IonButton>
           </IonCol>
           <IonCol>
-            <IonButton expand='full' shape='round' color="primary">+</IonButton>
+            <IonButton  color="primary">+</IonButton>
           </IonCol>
         </IonRow>
         
         <IonRow>
           <IonCol>
-            <IonButton expand='full' shape='round' color="warning">7</IonButton>
+            <IonButton  color="dark">7</IonButton>
           </IonCol>
 
           <IonCol>
-            <IonButton expand='full' shape='round' color="warning">8</IonButton>
+            <IonButton  color="dark">8</IonButton>
           </IonCol>
 
           <IonCol>
-            <IonButton expand='full' shape='round' color="warning">9</IonButton>
+            <IonButton  color="dark">9</IonButton>
           </IonCol>
 
           <IonCol>
-            <IonButton expand='full' shape='round' color="primary">-</IonButton>
+            <IonButton  color="primary">-</IonButton>
           </IonCol>
         </IonRow>
         <IonRow>
           <IonCol>
-            <IonButton expand='full' shape='round' color="warning">4</IonButton>
+            <IonButton  color="dark">4</IonButton>
           </IonCol>
 
           <IonCol>
-            <IonButton expand='full' shape='round' color="warning">5</IonButton>
+            <IonButton  color="dark">5</IonButton>
           </IonCol>
 
           <IonCol>
-            <IonButton expand='full' shape='round' color="warning">6</IonButton>
+            <IonButton  color="dark">6</IonButton>
           </IonCol>
 
           <IonCol>
-            <IonButton expand='full' shape='round' color="primary">x</IonButton>
+            <IonButton  color="primary">x</IonButton>
           </IonCol>
 
     
         </IonRow>
         <IonRow>
         <IonCol>
-            <IonButton expand='full' shape='round' color="warning">1</IonButton>
+            <IonButton  color="dark">1</IonButton>
           </IonCol>
           <IonCol>
-            <IonButton expand='full' shape='round' color="warning">2</IonButton>
+            <IonButton  color="dark">2</IonButton>
           </IonCol>
           <IonCol>
-            <IonButton expand='full' shape='round' color="warning">3</IonButton>
+            <IonButton  color="dark">3</IonButton>
           </IonCol>
           <IonCol>
-            <IonButton expand='full' shape='round' color="primary">/</IonButton>
+            <IonButton  color="primary">/</IonButton>
           </IonCol> 
         </IonRow>
         <IonRow>
         <IonCol>
-            <IonButton expand='full' shape='round' color="primary" id="del" class='botoes-redondos'>Del</IonButton>
+            <IonButton  color="primary" class='botoes-redondos'>D</IonButton>
           </IonCol>
           <IonCol>
-            <IonButton expand='full' shape='round' color="warning">0</IonButton>
+            <IonButton  color="dark">0</IonButton>
           </IonCol>
           <IonCol>
-            <IonButton expand='full' shape='round' color="warning" class='botoes-redondos'>.</IonButton>
+            <IonButton  color="dark" class='botoes-redondos'>.</IonButton>
           </IonCol>
           <IonCol>
-            <IonButton expand='full' shape='round' color="primary">=</IonButton>
+            <IonButton  color="primary">=</IonButton>
           </IonCol> 
         </IonRow>
       </IonGrid>        
