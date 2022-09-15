@@ -34,18 +34,27 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+/*import do storage*/
+import { Storage } from '@ionic/storage';
+
+
 setupIonicReact();
 
+const store = new Storage();
+  store.create();
+
 const App: React.FC = () => (
+  
+
   <IonApp>
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/tab1">
-            <Tab1 />
+            <Tab1 banco={store} />
           </Route>
           <Route exact path="/tab2">
-            <Tab2 />
+            <Tab2 banco={store} />
           </Route>
           <Route path="/tab3">
             <Tab3 />

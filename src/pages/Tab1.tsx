@@ -2,8 +2,10 @@ import { IonButton, IonCard, IonCol, IonContent, IonGrid, IonHeader, IonPage, Io
 import { useState } from 'react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
+import { Storage } from "@ionic/storage";
 
-const Tab1: React.FC = () => {
+const Tab1: React.FC<{banco: Storage}> =  ({ banco }) => {
+
 
   const [calculo, setCalculo] = useState("");
 
@@ -106,12 +108,13 @@ const Tab1: React.FC = () => {
           </IonCol>
           <IonCol>
             <IonButton onClick={
-              ()=>{
-                
+              async ()=>{
                 try{
 
                   var result = eval(calculo);
                   setCalculo(result);
+                  let qtd_keys = await banco.length();
+                  banco.set((qtd_keys+1).toString(),result)
 
                 }catch(erro){
 
@@ -119,7 +122,7 @@ const Tab1: React.FC = () => {
 
                 }
               }
-            }  color="primary"> =</IonButton>
+            }  color="primary">=</IonButton>
           </IonCol> 
         </IonRow>
       </IonGrid>        
